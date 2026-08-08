@@ -1,0 +1,99 @@
+body{
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    justify-content: space-around;
+    align-items: center;
+    background: beige;
+    font-family: Arial;
+    color: black;
+}
+
+#aside1,#aside2 {
+    border: 1px solid white;
+    width: 400px;
+    padding: 10px;
+    list-style: none;
+    background: rgba(0,0,0,0.10);
+    box-shadow: 1px 5px 30px 2px rgb(0,0,0,0.90);
+    
+}
+
+#aside1 h2 {
+    display: flex;
+    justify-content: center;
+}
+
+#aside1 .input_G{
+    display: block;
+    position: relative;
+    left: 50px;
+}
+
+.input_G input {
+    width: 300px;
+    /* background: #344e41; */
+    border: 1px solid gray;
+    margin-bottom: 10px;
+    background: none;
+    color: black;
+}
+
+.input_G input:nth-child(2) {
+    height: 50px;
+}
+
+.input_G input::placeholder {
+    color: black;
+}
+
+.input_G input::placeholder:nth-child(2) {
+    position: relative;
+    top: -40px;
+}
+
+.input_G button {
+    width: 70px;
+    display: block;
+    position: relative;
+    left: 120px;
+    bottom: 0px;
+    background: green;
+    border: none;
+    color: white;
+    font-weight: 700;
+    padding: 5px;
+}
+
+#aside2 {
+    max-height: 200px;
+    overflow-y: scroll;
+}
+
+#aside2 li {
+    display: flex;
+    justify-content: space-between;
+    background-color: none;
+    width: 300px;
+    height: 20px;
+    margin-bottom: 10px;
+    border: 1px solid gray;
+
+}
+
+#aside2 li:nth-child(3){
+    height: 50px;
+    width: 300px;
+    overflow: hidden;
+}
+
+#aside2 button {
+    padding: 5px;
+    position: relative;
+    right: -80px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: red;
+}
